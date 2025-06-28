@@ -1,9 +1,0 @@
-fastapi
-motor
-uvicorn
-pydantic
-python-jose[cryptography]
-python-dotenv
-passlib
-fpdf
-reportlab
