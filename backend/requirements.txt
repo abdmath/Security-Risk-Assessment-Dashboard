@@ -8,3 +8,4 @@ passlib
 fpdf
 reportlab
 pydantic_settings
+pydantic[email]
