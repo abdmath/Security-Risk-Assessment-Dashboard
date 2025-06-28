@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: security-risk-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    envVars:
+      - key: MONGO_URL
+        value: mongodb+srv://abdulmatheen060:oDUUCrFu7XVTSBji@cluster0.a3lljwi.mongodb.net/riskdashboard?retryWrites=true&w=majority&appName=Cluster0
+      - key: SECRET_KEY
+        value: QzN5$!r8uJK3vF@pLh7zB^Tx%W4cM1#q
+
