@@ -7,3 +7,4 @@ python-dotenv
 passlib
 fpdf
 reportlab
+pydantic_settings
