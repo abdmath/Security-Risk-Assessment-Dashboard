@@ -5,12 +5,13 @@ import Dashboard from "./pages/Dashboard";
 import Register from "./pages/Register";
 
 function App() {
-  const [token, setToken] = useState(() => localStorage.getItem("token"));
+  const [token, setToken] = useState(null);
 
   useEffect(() => {
-    const checkToken = () => setToken(localStorage.getItem("token"));
-    window.addEventListener("storage", checkToken);
-    return () => window.removeEventListener("storage", checkToken);
+    const storedToken = localStorage.getItem("token");
+    if (storedToken && storedToken !== "undefined" && storedToken !== "null") {
+      setToken(storedToken);
+    }
   }, []);
 
   const handleLogin = (newToken) => {
@@ -23,28 +24,24 @@ function App() {
     setToken(null);
   };
 
+  const isAuthenticated = token && token !== "undefined" && token !== "null";
+
   return (
     <Router>
       <Routes>
         <Route path="/register" element={<Register />} />
-        <Route
-          path="/login"
-          element={<Login onLogin={handleLogin} />}
-        />
+        <Route path="/login" element={<Login onLogin={handleLogin} />} />
         <Route
           path="/dashboard"
           element={
-            token && token !== "undefined" && token !== "null" ? (
+            isAuthenticated ? (
               <Dashboard onLogout={handleLogout} />
             ) : (
               <Navigate to="/login" />
             )
           }
         />
-        <Route
-          path="/"
-          element={<Navigate to={token ? "/dashboard" : "/login"} />}
-        />
+        <Route path="*" element={<Navigate to={isAuthenticated ? "/dashboard" : "/login"} />} />
       </Routes>
     </Router>
   );
