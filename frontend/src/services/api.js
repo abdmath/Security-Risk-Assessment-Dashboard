@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8000", // or your deployed FastAPI backend URL
+  baseURL: "https://security-risk-backend-46f8.onrender.com/api/v1", // or your deployed FastAPI backend URL
 });
 
 api.interceptors.request.use((config) => {
