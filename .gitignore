@@ -5,6 +5,7 @@ build/
 
 # Python (backend)
 __pycache__/
+zoo/
 *.pyc
 venv/
 .env
@@ -14,5 +15,4 @@ venv/
 
 # OS
 .DS_Store
-Thumbs.db
-zoo
+Thumbs.db 
