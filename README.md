@@ -27,7 +27,16 @@ This application allows users to:
 - 📚 Framework Mapping (NIST & ISO)
 
 ---
+## 📷 Screenshots
+![ss1](https://github.com/user-attachments/assets/023ea255-9ba5-434c-9175-8b8630cb0a23)
+![ss2](https://github.com/user-attachments/assets/b57154d6-a905-49cb-90b6-d9fb41e2964d)
+![ss3](https://github.com/user-attachments/assets/ba147c28-a939-4fd0-9b3d-63f393d829f6)
+![ss4](https://github.com/user-attachments/assets/19544390-4d31-4fa3-a559-977d4b317450)
+![ss5](https://github.com/user-attachments/assets/6d7471c4-fd8c-433a-997a-45e14b7faea7)
 
+## Sample PDF Report
+[report (2).pdf](https://github.com/user-attachments/files/20963098/report.2.pdf)
+---
 ## ⚙️ Tech Stack
 
 **Frontend:**
@@ -103,6 +112,8 @@ Start the React app:
 ```
 npm start
 ```
+Frontend will run at: http://localhost:3000
+
 ---
 
 ## 📁 Project Structure
@@ -132,9 +143,6 @@ Security-Risk-Assessment-Dashboard/
 └── README.md
 ```
 ---
-## 📷 Screenshots
-
----
 
 ## 🔮 Future Enhancements
 
@@ -144,3 +152,7 @@ Security-Risk-Assessment-Dashboard/
 - XLSX Export & Email Integration
 - AI Risk Suggestion Engine
 
+---
+
+## License
+This project is licensed under the MIT License.
