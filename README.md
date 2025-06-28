@@ -1,3 +1,5 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 # Security Risk Assessment Dashboard (NIST CSF / ISO 27001 Based)
 
 A professional-grade dashboard built for Governance, Risk, and Compliance (GRC) teams to conduct structured cybersecurity risk assessments. This tool helps align organizational risks with control frameworks like **NIST Cybersecurity Framework (CSF)** and **ISO/IEC 27001**, enabling consultants, auditors, and internal security teams to evaluate, quantify, and visualize cyber risks effectively.
